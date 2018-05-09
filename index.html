@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Do she love me?</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101089220-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101089220-2');
+</script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+<style>
+      body {
+        font-family: 'Roboto', serif;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 90px;
+        font-size: 48px;
+      }
+    </style>
+
+</head>
+<body>
+<span id="target"></span>
+</body>
+<script type="text/javascript">
+var target = document.getElementById('target');
+var titles = [
+    'Yes',
+    'No',
+    'I don\'t know',
+    'Probably',
+    'Probably Not'
+];
+
+function randomlilili () {
+    var i = (Math.random() * titles.length) | 0;
+    target.innerText = titles[i];
+}
+
+randomlilili();
+</script>
+</html>
